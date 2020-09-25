@@ -1,8 +1,3 @@
-// Setup empty JS object to act as endpoint for all routes
-let projectData = [];
-
-
-// Require Express to run server and routes
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -24,7 +19,7 @@ app.use(express.static('dist'));
 
 /* Middleware*/
 //Here we are configuring express to use body-parser as middle-ware.
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
@@ -37,22 +32,16 @@ app.listen(8081, function () {
 
 // get
 
-app.get('/all', function (req, res) {
-res.send(projectData)
-});
+app.post("/getCord", async function (req, res) {
+    const app_key = process.env.API_KEY
+    const apiUrl = `http://api.geonames.org/postalCodeSearchJSON?maxRows=1&placename=${req.body.url}&username=${app_key}`
+    let response = await fetch(apiUrl)
+    let data = await response.json()
 
-app.post('/all', addTemperature);
+    console.log(data)
 
-function addTemperature (req, res) {
-
-    
-   let newEntry = {
-        temp: req.body.temp,
-        date: req.body.date,
-        userResponse: req.body.userResponse,
-    }
-    projectData.push(newEntry);
-    console.log(projectData);
-    res.send(projectData);
-
-}
+    const superdata = {}
+    superdata.lat = data["postalCodes"][0]["lat"]
+    superdata.lng = data["postalCodes"][0]["lng"]
+    res.send(superdata)
+})

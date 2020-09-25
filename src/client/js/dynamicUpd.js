@@ -6,8 +6,8 @@ let d = new Date();
 let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 
-let baseURL = 'http://api.openweathermap.org/data/2.5/weather?zip='
-let apiKey = '&appid=19c2aabe433bf85adec8693c492b7e38';
+let baseURL = 'http://api.geonames.org/postalCodeSearchJSON?maxRows=1&placename='
+let apiKey = '&username=extern';
 
 
 //post
@@ -89,6 +89,5 @@ const updateUI = async () => {
 }
 }
 }
-
 
 export { dynamicUpd }

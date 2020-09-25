@@ -1,7 +1,7 @@
-import { dynamicUpd } from './js/dynamicUpd'
+import { getCord } from './js/CallCordinate'
 
 export {
-    dynamicUpd
+    getCord
 }
 
 import './styles/style.scss'
