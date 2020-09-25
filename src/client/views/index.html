@@ -16,6 +16,11 @@
     <input type="text" id="zip" placeholder="enter zip code here">
   </form>
   </div>
+  <div>
+  <label for="date" onsubmit="return Client.getWeather(event)">Date </label>
+  <input  onsubmit="return Client.getWeather(event)" type="date" id="date" name="date"/>
+  <button id="dateeee" type = "submit" onclick="return Client.getWeather(event)"></button>
+  </div>
   <div class ="holder feel">
     <label for="feelings">How are you feeling today?</label>
     <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>

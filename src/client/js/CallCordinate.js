@@ -14,8 +14,8 @@ function getCord (event) {
     })
     .then(res => res.json())
     .then(function(res) {
-        document.getElementById('shir').innerHTML = `Shirina: ${res.lat}`;
-        document.getElementById('dolg').innerHTML = `Dolgota: ${res.lng}`;
+        document.getElementById('shir').innerHTML = `${res.lat}`;
+        document.getElementById('dolg').innerHTML = `${res.lng}`;
     })
 }
 export { getCord }

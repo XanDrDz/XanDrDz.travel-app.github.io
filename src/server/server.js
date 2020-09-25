@@ -30,7 +30,7 @@ app.listen(8081, function () {
     console.log('App listening on port 8081')
 })
 
-// get
+// get lat and lng
 
 app.post("/getCord", async function (req, res) {
     const app_key = process.env.API_KEY
@@ -44,4 +44,18 @@ app.post("/getCord", async function (req, res) {
     superdata.lat = data["postalCodes"][0]["lat"]
     superdata.lng = data["postalCodes"][0]["lng"]
     res.send(superdata)
+})
+
+//get current weather
+app.post("/getWeather", async function (req, res) {
+    const app_key2 = process.env.API_KEY2
+    const apiUrl = `https://api.weatherbit.io/v2.0/current?lat=${req.body.url1}&lon=${req.body.url2}&key=${app_key2}`
+    let response = await fetch(apiUrl)
+    let data2 = await response.json()
+
+    console.log(data2)
+
+    const superdata2 = {}
+    superdata2.lat = data2["data"][0]["temp"]
+    res.send(superdata2)
 })
