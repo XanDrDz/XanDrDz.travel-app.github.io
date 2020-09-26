@@ -6,7 +6,8 @@ dotenv.config();
 var path = require('path')
 const mockAPIResponse = require('./mockAPI.js')
 const cors = require('CORS');
-const fetch = require('node-fetch')
+const fetch = require('node-fetch');
+const { waitForDebugger } = require('inspector');
 
 dotenv.config();
 // Start up an instance of app
@@ -58,4 +59,17 @@ app.post("/getWeather", async function (req, res) {
     const superdata2 = {}
     superdata2.lat = data2["data"][0]["temp"]
     res.send(superdata2)
+})
+
+app.post("/getWeatherForecast", async function (req, res) {
+    const app_key3 = process.env.API_KEY3
+    const apiUrl = `https://api.weatherbit.io/v2.0/forecast/daily?lat=${req.body.url1}&lon=${req.body.url2}&key=${app_key3}`
+    let response = await fetch(apiUrl)
+    let data3 = await response.json()
+
+    console.log(data3)
+
+    const superdata3 = {}
+    superdata3.lat = data3["data"][0]["max_temp"]
+    res.send(superdata3)
 })
