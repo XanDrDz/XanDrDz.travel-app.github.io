@@ -12,28 +12,31 @@
   </div>
   <div id = "button img">
     <img id="IMG" src="" alt="No IMG">
-    <button id="dateeee" type = "submit" onclick="return Client.getImage(event)"></button>
   </div>
   <div class ="holder zip">
     <form class="" onsubmit="return Client.getCord(event)">
-    <label for="zip">Enter Zipcode here</label>
+    <label for="zip">City</label>
     <input type="text" id="zip" placeholder="enter zip code here">
   </form>
   </div>
   <div>
-  <label for="date" onsubmit="return Client.getWeather(event)">Date </label>
+  <label for="date" onsubmit="return Client.getWeather(event)"> Start date </label>
   <input  onsubmit="return Client.getWeather(event)" type="date" id="date" name="date"/>
-  <button id="dateeee" type = "submit" onclick="return Client.getWeather(event)"></button>
   </div>
+  <div>
+    <label for="date" onsubmit="return Client.getWeather(event)"> End date </label>
+    <input  onsubmit="return Client.getWeather(event)" type="date" id="dateend" name="date"/>
+    </div>
   <div class ="holder feel">
-    <button id="generate" type = "submit" onclick="return Client.All(event)" onsubmit="return All(event)"> Generate </button>
+    <button id="generate" type = "submit" onclick="return Client.All(event)" onsubmit="return Client.All(event)"> add </button>
   </div>
   <div class ="holder entry">
     <div class = "title">Temperature</div>
    <div id = "entryHolder">
    <div id = "shir"></div> 
    <div id = "dolg"></div>
-   <div id = "content"></div>
+   <div id = "temp"></div>
+   <div id = "grad"></div>
   </div>
   </div>
   </div>
