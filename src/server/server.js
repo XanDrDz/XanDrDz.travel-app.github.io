@@ -61,6 +61,8 @@ app.post("/getWeather", async function (req, res) {
     res.send(superdata2)
 })
 
+//get weather forecast
+
 app.post("/getWeatherForecast", async function (req, res) {
     const app_key3 = process.env.API_KEY3
     const apiUrl = `https://api.weatherbit.io/v2.0/forecast/daily?lat=${req.body.url1}&lon=${req.body.url2}&key=${app_key3}`
@@ -72,4 +74,19 @@ app.post("/getWeatherForecast", async function (req, res) {
     const superdata3 = {}
     superdata3.lat = data3["data"][0]["max_temp"]
     res.send(superdata3)
+})
+
+//get ImagE
+
+app.post("/getImage", async function (req, res) {
+    const app_key4 = process.env.API_KEY4
+    const apiUrl = `https://pixabay.com/api/?key=${app_key4}&q=${req.body.url}&image_type=photo`
+    let response = await fetch(apiUrl)
+    let data4 = await response.json()
+
+    console.log(data4)
+
+    const superdata4 = {}
+    superdata4.lat = data4["hits"][3]["webformatURL"]
+    res.send(superdata4)
 })
