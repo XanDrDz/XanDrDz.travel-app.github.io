@@ -1,10 +1,9 @@
-# Weather-Journal App Project
+# Travel App Project
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+This application allows you to get information about the entered city (temperature, image) and the difference between the entered dates
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+## Description
+Geonames API provides width and longitude. Depending on the entered city, its data will be determined and the user will receive the temperature. If the entered date is greater than the current one, then we get the maximum predicted temperature, if less then the current temperature. There are 2 date fields: end and start. After entering, the user will see the duration of the trip in days. Also, based on the entered city, an image will be displayed
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+
