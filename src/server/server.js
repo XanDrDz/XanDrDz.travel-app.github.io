@@ -90,3 +90,4 @@ app.post("/getImage", async function (req, res) {
     superdata4.lat = data4["hits"][3]["webformatURL"]
     res.send(superdata4)
 })
+
