@@ -5,40 +5,40 @@
 <title>Travel App</title>
 <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
 </head>
- <body>
-<div id = "app">
-  <div class ="holder headline">
+<body>
+  <div id = "app">
+    <div class ="holder headline">
     Travel App
-  </div>
-  <div id = "button img">
-    <img id="IMG" src="" alt="No IMG">
-  </div>
-  <div class ="holder zip">
-    <form class="" onsubmit="return Client.getCord(event)">
-    <label for="zip">City</label>
-    <input type="text" id="zip" placeholder="enter zip code here">
-  </form>
-  </div>
-  <div>
-  <label for="date" onsubmit="return Client.getWeather(event)"> Start date </label>
-  <input  onsubmit="return Client.getWeather(event)" type="date" id="date" name="date"/>
-  </div>
-  <div>
-    <label for="date" onsubmit="return Client.getWeather(event)"> End date </label>
-    <input  onsubmit="return Client.getWeather(event)" type="date" id="dateend" name="date"/>
     </div>
-  <div class ="holder feel">
-    <button id="generate" type = "submit" onclick="return Client.All(event)" onsubmit="return Client.All(event)"> add </button>
-  </div>
-  <div class ="holder entry">
-    <div class = "title">Temperature</div>
-   <div id = "entryHolder">
-   <div id = "shir"></div> 
-   <div id = "dolg"></div>
-   <div id = "temp"></div>
-   <div id = "grad"></div>
-  </div>
-  </div>
+    <div id = "button img">
+      <img id="IMG"  alt="INPUT CITY">
+    </div>
+    <div class ="holder zip">
+      <form class="" onsubmit="return Client.getCord(event)">
+      <label for="zip">City</label>
+      <input type="text" id="zip" placeholder="enter city here">
+      </form>
+    </div>
+    <div>
+      <label for="date" onsubmit="return Client.getWeather(event)"> Start date </label>
+      <input  onsubmit="return Client.getWeather(event)" type="date" id="date" name="date"/>
+    </div>
+    <div>
+      <label for="date" onsubmit="return Client.getWeather(event)"> End date </label>
+      <input  onsubmit="return Client.getWeather(event)" type="date" id="dateend" name="date"/>
+    </div>
+    <div class ="holder feel">
+      <button id="generate" type = "submit" onclick="return Client.All(event)" onsubmit="return Client.All(event)"> add </button>
+    </div>
+    <div class ="holder entry">
+      <div class = "title">Temperature</div>
+      <div id = "entryHolder">
+        <div id = "shir"></div> 
+        <div id = "dolg"></div>
+        <div id = "temp"></div>
+        <div id = "grad"></div>
+      </div>
+    </div>
   </div>
   <script>
     // Check that service workers are supported
