@@ -1,6 +1,7 @@
 function getImage (event) {
     event.preventDefault()
     let formText = document.getElementById('zip').value;
+    formText = formText.replace(/\s+/g,'')
     console.log(formText)
 
     console.log(" Form Submitted ")
