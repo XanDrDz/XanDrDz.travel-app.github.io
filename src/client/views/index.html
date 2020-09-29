@@ -7,30 +7,30 @@
 </head>
 <body>
   <div id = "app">
-    <div class ="holder headline">
+    <div class ="holder headline" id="hd">
     Travel App
     </div>
-    <div id = "button img">
+    <div id = "button img" class="buttonimg">
       <img id="IMG" src=""  alt="INPUT CITY">
     </div>
-    <div class ="holder zip">
+    <div class ="holder zip" id="zipk">
       <form class="" onsubmit="return Client.getCord(event)">
       <label for="zip">City</label>
       <input type="text" id="zip" placeholder="enter city here">
       </form>
     </div>
-    <div>
+    <div id="dategrid">
       <label for="date" onsubmit="return Client.getWeather(event)"> Start date </label>
       <input  onsubmit="return Client.getWeather(event)" type="date" id="date" name="date"/>
     </div>
-    <div>
+    <div id="dategrid2">
       <label for="date" onsubmit="return Client.getWeather(event)"> End date </label>
       <input  onsubmit="return Client.getWeather(event)" type="date" id="dateend" name="date"/>
     </div>
-    <div class ="holder feel">
+    <div class ="holder feel" id="generatebut">
       <button id="generate" type = "submit" onclick="return Client.All(event)" onsubmit="return Client.All(event)"> add </button>
     </div>
-    <div class ="holder entry">
+    <div class ="holder entry" id="textuh">
       <div class = "title">Temperature</div>
       <div id = "entryHolder">
         <div id = "shir"></div> 

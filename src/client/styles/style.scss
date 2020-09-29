@@ -5,9 +5,16 @@ body{
 
 #app{
     display: grid;
-    grid-template-rows: 300px 700px;
+    grid-template-rows:  200px 200px 200px 200px 200px;   //minmax(200px, 5);
+    grid-template-columns: 300px 300px 300px  ;  //minmax(500x, 3);
+    grid-template-areas: 
+    "hd hd hd hd hd"
+    "zip zip img img img"
+    "data1 data2 img img img"
+    "gen gen img img img"
+    "textuh textuh img img img";
     /* grid-template-columns:  */
-    height:80vh;
+    height:100vh;
     background: #e0ffff;
     color: #110f05;
     justify-content: left;
@@ -30,9 +37,6 @@ width: 1000px;
 height: 300px;
 }
 
-.flex {
-    display: grid;
-}
 
 #date{
 
@@ -126,3 +130,34 @@ button:focus {
  height: 500px;
  padding-left: 400px;
 }
+
+#hd {
+    grid-area: hd;
+}
+
+.buttonimg {
+    grid-area: img;
+}
+
+#zipk {
+    grid-area: zip;
+}
+
+#dategrid {
+grid-area: data1;
+}
+
+#dategrid2 {
+    grid-area: data2;
+}
+
+#generatebut {
+    grid-area: gen;
+}
+
+#textuh {
+    grid-area: textuh;
+}
+
+
+
