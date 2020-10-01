@@ -5,9 +5,13 @@ import { getImage } from './js/CallImage'
 import { getCord } from './js/CallCordinate'
 
 export {
-    All,
     getCord,
-    checkWeek,
+    All,
+    checkWeek
 }
 
 import './styles/style.scss'
+
+window.addEventListener('scroll', function (e){
+    console.log('hello world');
+});
