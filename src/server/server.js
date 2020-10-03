@@ -80,7 +80,7 @@ app.post("/getWeatherForecast", async function (req, res) {
 
 app.post("/getImage", async function (req, res) {
     const app_key4 = process.env.API_KEY4
-    const apiUrl = `https://pixabay.com/api/?key=${app_key4}&q=${req.body.url}&image_type=photo`
+    const apiUrl = `https://pixabay.com/api/?key=${app_key4}&q=${req.body.url}&category=places&image_type=photo`
     let response = await fetch(apiUrl)
     let data4 = await response.json()
 
