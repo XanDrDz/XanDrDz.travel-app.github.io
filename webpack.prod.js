@@ -7,6 +7,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
 
+
 module.exports = {
     entry: './src/client/index.js',
     mode: 'production',
@@ -25,6 +26,14 @@ module.exports = {
                 test: '/\.js$/',
                 exclude: /node_modules/,
                 loader: "babel-loader"
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader?name=[name].[ext]',
+                    }
+                ]
             },
             {
                 test: /\.scss$/,
