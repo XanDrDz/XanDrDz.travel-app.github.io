@@ -19,6 +19,6 @@ import './styles/style.scss'
 
 
 
-document.getElementById('generate').addEventListener('click', function (e){
+document.addEventListener('DOMContentLoaded', (document.getElementById('generate').addEventListener('click', function (e){
     Client.All();
-});
+})));
