@@ -37,7 +37,8 @@ fetch('http://localhost:8081/getCord', {
         },
         body: JSON.stringify({
             url1: shir,
-            url2: dolg
+            url2: dolg,
+            input: inputDate
         })
     })
     .then(res => res.json())
@@ -55,7 +56,8 @@ fetch('http://localhost:8081/getWeatherForecast', {
     },
     body: JSON.stringify({
         url1: shir,
-        url2: dolg
+        url2: dolg,
+        input: inputDate
     })
 })
 .then(res => res.json())
@@ -91,7 +93,6 @@ fetch('http://localhost:8081/getWeatherForecast', {
         document.getElementById('grad').innerHTML = `Duration of the train ${diffDays} days`
 
 
-        
 
     }
 

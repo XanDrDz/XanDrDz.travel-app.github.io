@@ -9,6 +9,7 @@ const cors = require('CORS');
 const fetch = require('node-fetch');
 const { waitForDebugger } = require('inspector');
 
+
 dotenv.config();
 // Start up an instance of app
 
@@ -72,7 +73,11 @@ app.post("/getWeatherForecast", async function (req, res) {
     console.log(data3)
 
     const superdata3 = {}
-    superdata3.lat = data3["data"][0]["max_temp"]
+    for (let i = 0; i < data3['data'].length; i++) {
+        if (`${req.body.input}` === data3['data'][i]['datetime']) {
+            superdata3.lat = data3['data'][i]['temp']
+        }
+    }
     res.send(superdata3)
 })
 
@@ -90,4 +95,5 @@ app.post("/getImage", async function (req, res) {
     superdata4.lat = data4["hits"][0]["largeImageURL"]
     res.send(superdata4)
 })
+
 
