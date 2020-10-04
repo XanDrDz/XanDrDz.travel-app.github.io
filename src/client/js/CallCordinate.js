@@ -1,5 +1,4 @@
 function getCord (event) {
-    event.preventDefault()
     let formText = document.getElementById('zip').value;
     console.log(formText)
 

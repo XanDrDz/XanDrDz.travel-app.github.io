@@ -1,5 +1,4 @@
 function getWeather (event) {
-    event.preventDefault()
     let inputDate = document.getElementById('date').value
     let shir = document.getElementById('shir').innerHTML;
     let dolg = document.getElementById('dolg').innerHTML;

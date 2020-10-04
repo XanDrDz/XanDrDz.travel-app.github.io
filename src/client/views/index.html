@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=0.8">
 <title>Travel App</title>
 <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
 </head>
@@ -14,21 +14,21 @@
       <img id="IMG" src="/Fr11.jpg"  alt="INPUT CITY">
     </div>
     <div class ="holder zip" id="zipk">
-      <form class="" onsubmit="return Client.getCord(event)">
-      <label for="zip">City</label>
+      <form class="zipo">
+      <label for="zip" id="labelzip">City</label>
       <input type="text" id="zip" placeholder="enter city here">
       </form>
     </div>
     <div id="dategrid">
-      <label for="date" onsubmit="return Client.getWeather(event)"> Start date </label>
-      <input  onsubmit="return Client.getWeather(event)" type="date" id="date" name="date"/>
+      <label for="date"> Start date </label>
+      <input type="date" id="date" name="date"/>
     </div>
     <div id="dategrid2">
-      <label for="date" onsubmit="return Client.getWeather(event)"> End date </label>
-      <input  onsubmit="return Client.getWeather(event)" type="date" id="dateend" name="date"/>
+      <label for="date"> End date </label>
+      <input   type="date" id="dateend" name="date"/>
     </div>
     <div class ="holder feel" id="generatebut">
-      <button id="generate" type = "submit" onclick="return Client.All(event)" onsubmit="return Client.All(event)"> add </button>
+      <button id="generate" type = "submit"> add </button>
     </div>
     <div class ="holder entry" id="textuh">
       <div class = "title">Temperature</div>
@@ -39,6 +39,11 @@
         <div id = "grad"></div>
       </div>
     </div>
+    <div id="footer"> 
+      <a id="refer" href="https://pixabay.com/">
+Pixabay Free Images
+      </a>  
+   </div>
   </div>
   <script>
     // Check that service workers are supported
@@ -49,10 +54,5 @@
         });
     }
    </script>
-   <div id="footer"> 
-      <a id="refer" href="https://pixabay.com/">
-Pixabay Free Images
-      </a>  
-   </div>
 </body>
 </html>

@@ -10,7 +10,7 @@ import img from './media/Fr11.jpg'
 export {
     getCord,
     All,
-    checkWeek,
+    checkWeek
 }
 
 import './styles/style.scss'
@@ -19,6 +19,6 @@ import './styles/style.scss'
 
 
 
-window.addEventListener('scroll', function (e){
-    console.log('hello world');
+document.getElementById('generate').addEventListener('click', function (e){
+    Client.All();
 });

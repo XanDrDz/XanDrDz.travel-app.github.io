@@ -64,7 +64,7 @@
    /*  Basic Styling To Override Default For Basic HTML Elements */
    label{
        display:block;
-       font-size: 2px;
+       font-size: 10px;
    }
    
    input{
@@ -168,6 +168,7 @@
    #textuh {
        grid-area: textuh;
        width: 150px;
+       display: grid;
        height: 100px;
        margin-top: 100px;
        margin-left: 27%;
@@ -178,15 +179,13 @@
    #footer {
        grid-area: ft;
        font-size: 2px;
-       margin-left: 2%;
-       margin:70px 15px 5px 0;
+       margin: 60% 5px 0;
        font-size:10px;
        line-height:1.7;
        color:#555;
-       display:block;
+       display:grid;
        float:left;
        padding:9px 12px 6px;
-       border:1px solid #ccc;
    }
    };
    @media (min-width: 600px) and (max-width: 900px) {
@@ -352,6 +351,7 @@
        }
        
        #textuh {
+           display: grid;
            grid-area: textuh;
            width: 325px;
        }
@@ -360,15 +360,13 @@
            grid-area: ft;
            font-size: 10px;
            margin-left: 2%;
-           margin-top: 30%;
-           margin:200px 15px 5px 0;
+           margin:60% 15px 5px 0;
            font-size:10px;
            line-height:1.7;
            color:#555;
-           display:block;
+           display:grid;
            float:left;
            padding:9px 12px 6px;
-           border:1px solid #ccc;
        }
        };
    
@@ -544,14 +542,13 @@
        grid-area: ft;
        font-size: 20px;
        margin-left: 2%;
-       margin:200px 15px 5px 0;
+       margin:35% 15px 5px 0;
+       display: grid;
        font-size:20px;
        line-height:1.7;
        color:#555;
-       display:block;
        float:left;
        padding:9px 12px 6px;
-       border:1px solid #ccc;
    }
    
    
