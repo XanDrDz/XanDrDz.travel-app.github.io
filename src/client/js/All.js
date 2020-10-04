@@ -43,7 +43,7 @@ fetch('http://localhost:8081/getCord', {
     })
     .then(res => res.json())
     .then(function(res) {
-        document.getElementById('shir').innerHTML = `Temperature: ${res.lat}`;
+        document.getElementById('shir').innerHTML = `Current Temperature: ${res.lat}`;
     })
 } 
 else { 
@@ -62,7 +62,7 @@ fetch('http://localhost:8081/getWeatherForecast', {
 })
 .then(res => res.json())
 .then(function(res) {
-    document.getElementById('shir').innerHTML = `Max temperature: ${res.lat}`;})
+    document.getElementById('shir').innerHTML = `Forecast temperature: ${res.lat}`;})
 }})
 
     //get ImG
