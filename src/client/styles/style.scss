@@ -27,40 +27,16 @@
        font-size: 20px;
        font-family: 'Oswald', sans-serif;
    }
-   
-   .holder{
-   
-   }
-   
+    
    .entry{
        background: rgba(93, 214, 214, 0.4);
    }
    
    #entryHolder{
-   width: 100px;
-   height: 30px;
+       width: 100px;
+       height: 30px;
    }
-   
-   
-   #date{
-   
-   }
-   
-   #temp{
-   
-   }
-   
-   #content{
-   
-   }
-   
-   .headline {
-                  
-   }
-   .title{
-   
-   }
-   
+     
    /*  Basic Styling To Override Default For Basic HTML Elements */
    label{
        display:block;
@@ -125,9 +101,9 @@
    } 
    
    #IMG {
-    width: 200px;
-    height: 150px;
-    padding-left: 40px;
+       width: 200px;
+       height: 150px;
+       padding-left: 40px;
    }
    
    #hd {
@@ -150,8 +126,8 @@
    }
    
    #dategrid {
-   grid-area: data1;
-   margin-left: 55px;
+       grid-area: data1;
+       margin-left: 55px;
    }
    
    #dategrid2 {
@@ -166,9 +142,9 @@
    }
 
    #generate:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+       background-color: #4CAF50; /* Green */
+       color: white;
+       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
    }
    
    #textuh {
@@ -220,43 +196,24 @@
            font-size: 10px;
            font-family: 'Oswald', sans-serif;
        }
-       
-       .holder{
-       
-       }
-       
+             
        .entry{
            background: rgba(93, 214, 214, 0.4);
        }
        
        #entryHolder{
-       width: 500px;
-       height: 300px;
+           width: 500px;
+           height: 300px;
        }
        
-       
-       #date{
-       
-       }
-       
-       #temp{
-       
-       }
-       
-       #content{
-       
-       }
        
        .headline {
-       height: 25px;
-       color: #0b0c0f;
-       text-align: center;
-       font-size: 20px;
-       padding-top: 20px; 
-       padding-left:20%;                 
-       }
-       .title{
-       
+           height: 25px;
+           color: #0b0c0f;
+           text-align: center;
+           font-size: 20px;
+           padding-top: 20px; 
+           padding-left:20%;                 
        }
        
        /*  Basic Styling To Override Default For Basic HTML Elements */
@@ -323,9 +280,9 @@
        } 
        
        #IMG {
-        width: 300px;
-        height: 200px;
-        padding-left: 150px;
+           width: 300px;
+           height: 200px;
+           padding-left: 150px;
        }
        
        #hd {
@@ -342,7 +299,7 @@
        }
        
        #dategrid {
-       grid-area: data1;
+           grid-area: data1;
        }
        
        #dategrid2 {
@@ -409,18 +366,14 @@
        font-size: 20px;
        font-family: 'Oswald', sans-serif;
    }
-   
-   .holder{
-   
-   }
-   
+    
    .entry{
        background: rgba(93, 214, 214, 0.4);
    }
    
    #entryHolder{
-   width: 1000px;
-   height: 300px;
+       width: 1000px;
+       height: 300px;
    } 
  
    /*  Basic Styling To Override Default For Basic HTML Elements */
@@ -487,9 +440,9 @@
    } 
    
    #IMG {
-    width: 900px;
-    height: 500px;
-    padding-left: 400px;
+       width: 900px;
+       height: 500px;
+       padding-left: 400px;
    }
    
    #hd {
@@ -527,9 +480,9 @@
    }
 
    #generate:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+       background-color: #4CAF50; /* Green */
+       color: white;
+       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
    }
    
    #textuh {
