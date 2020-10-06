@@ -1,4 +1,3 @@
-import '@babel/polyfill'
 import { All } from './js/All'
 import { checkWeek } from './js/forCheckWeek'
 import { getWeather } from './js/forGetWeather'
