@@ -1,3 +1,4 @@
+import '@babel/polyfill'
 import { All } from './js/All'
 import { checkWeek } from './js/forCheckWeek'
 import { getWeather } from './js/forGetWeather'
@@ -10,7 +11,7 @@ import img from './media/Fr11.jpg'
 export {
     getCord,
     All,
-    checkWeek
+    checkWeek,
 }
 
 import './styles/style.scss'

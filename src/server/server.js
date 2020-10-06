@@ -96,4 +96,15 @@ app.post("/getImage", async function (req, res) {
     res.send(superdata4)
 })
 
+app.get('/test', async (req, res) => {
+    res.json({message: 'pass!'})
+})
+
+//for testing
+
+
+
+       module.exports = {app}; // To use in with testing.
+
+
 
